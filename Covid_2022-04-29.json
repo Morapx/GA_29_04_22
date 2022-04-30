@@ -1,0 +1,111 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2022-04-30T01:01:15.485Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_94866e515f994b7ca329ac01f2cdb3f1",
+			"created": 1651275192255,
+			"description": "",
+			"modified": 1651275192255,
+			"name": "Covid",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_b861ac0e9d754f76af09f42d07c779e0",
+			"color": null,
+			"created": 1651275192274,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1651275192274,
+			"modified": 1651275192274,
+			"name": "New Environment",
+			"parentId": "wrk_94866e515f994b7ca329ac01f2cdb3f1",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_db573c8e0c1a463d822dcbf99da9fd81",
+			"cookies": [],
+			"created": 1651275192277,
+			"modified": 1651275192277,
+			"name": "Default Jar",
+			"parentId": "wrk_94866e515f994b7ca329ac01f2cdb3f1",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_b4eb6bbc2b144157b839a7de112cae40",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_e6610867b18a4a5ebfd776fb2d782089",
+						"name": "id_tipo_usuario",
+						"value": "1"
+					},
+					{
+						"id": "pair_2f6a643e60084cb7b98ec2fc48312522",
+						"name": "matricula",
+						"value": "148798"
+					},
+					{
+						"id": "pair_751623f20b304169aedad7ed73784550",
+						"name": "nombre",
+						"value": "Pablo garcia"
+					},
+					{
+						"id": "pair_aa2357b2ea2d468c94e22793d871572b",
+						"name": "correo",
+						"value": "pablo@correo.com"
+					},
+					{
+						"id": "pair_5fb40c4dc91845029383669a073c9edf",
+						"name": "contacto_covid",
+						"value": "0"
+					},
+					{
+						"id": "pair_a769d9dcd33743348aedd82000bc013d",
+						"name": "vacunado",
+						"value": "1"
+					},
+					{
+						"id": "pair_ef884b3ac4b9409d809f9438b74b1a5d",
+						"name": "sintomas[]",
+						"value": "3"
+					},
+					{
+						"id": "pair_68ec3718cbe7476bbda3c0a40fa86e51",
+						"name": "sintomas[]",
+						"value": "5"
+					}
+				]
+			},
+			"created": 1651275216437,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_f417315eb386418cb811fe0d1a2b1a3f",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1651275216437,
+			"method": "POST",
+			"modified": 1651279963924,
+			"name": "Capturar respuesta encueta",
+			"parameters": [],
+			"parentId": "wrk_94866e515f994b7ca329ac01f2cdb3f1",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8000/api/capturas",
+			"_type": "request"
+		}
+	]
+}
